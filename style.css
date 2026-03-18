@@ -1,0 +1,114 @@
+        body {
+            background-color: #ffffff;
+        }
+
+        a {
+            color: white;
+        }
+
+        img {
+        width: 280px;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .sct {
+            width: 300px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 20px;
+            border: none;
+            background-color: #1308ac;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social {
+            width: 100px
+        }
+
+        .insta {
+            width: 70px;
+            margin-bottom: 15px;
+        }
+
+        .face {
+            width: 68px;
+            margin-bottom: 15px;
+            margin-left: 12px;
+        }
+
+        button:hover {
+            background-color: #49d412bb;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.938);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .produto {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .preco {
+      color: rgb(32, 133, 32);
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div {
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .wht {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px;
+    }
+
+    #busca {
+  width: 300px;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 25px; /* formato arredondado tipo Google */
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 50px;
+}
