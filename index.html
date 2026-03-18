@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucata do Luan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/WhatsApp_Image_2026-03-12_at_10.12.31-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header class="logo">
+        <img src="imagens/WhatsApp_Image_2026-03-12_at_10.12.31-removebg-preview.png" alt="" class="sct">
+        <div class="barra-busca">
+</div>
+        <input type="text" id="busca" placeholder="Buscar produto..." onkeyup="filtrarProdutos()">
+        <div><img src="imagens/whatsapp-logo-icon-isolated-on-transparent-background-free-png.png" alt="" class="social">
+        <img src="imagens/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="" class="insta">
+        <img src="imagens/2023_Facebook_icon.svg.png" alt="" class="face">
+        </div>
+    </header>
+    <div class="wht">
+        <button>
+            <p><STRONG>ENTRAR EM CONTATO</STRONG></p>
+        </button>
+        <button>
+            <p>ENDEREÇO</p>
+        </button>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2024-09-30 at 10-33-20 (2).jpeg" alt="">
+                <h2>Lanterna Golf 2011 A 2019</h2>
+                <p class="preco">R$ 299,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2025-11-19 at 16-16-04 (2).jpeg" alt="">
+                <h2>Volante Golf 2010</h2>
+                <p class="preco">R$ 499,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2026-03-17 at 09.00.45 (3).jpeg" alt="">
+                <h2>Comando Ar S10</h2>
+                <p class="preco">R$ 399,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2024-09-30 at 10-33-20 (2).jpeg" alt="">
+                <h2>Lanterna Golf 2011 A 2019</h2>
+                <p class="preco">R$ 299,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2025-11-19 at 16-16-04 (2).jpeg" alt="">
+                <h2>Volante Golf 2010</h2>
+                <p class="preco">R$ 499,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2026-03-17 at 09.00.45 (3).jpeg" alt="">
+                <h2>Comando Ar S10</h2>
+                <p class="preco">R$ 399,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2024-09-30 at 10-33-20 (2).jpeg" alt="">
+                <h2>Lanterna Golf 2011 A 2019</h2>
+                <p class="preco">R$ 299,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2025-11-19 at 16-16-04 (2).jpeg" alt="">
+                <h2>Volante Golf 2010</h2>
+                <p class="preco">R$ 499,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/WhatsApp Image 2026-03-17 at 09.00.45 (3).jpeg" alt="">
+                <h2>Comando Ar S10</h2>
+                <p class="preco">R$ 399,99</p>
+                <button><a href="https://wa.me/5599999999999?text=Olá%20tenho%20interesse%20no%20produto" target="_blank">Comprar</a></button>
+            </div>
+        </div>
+    </div>
+<script>
+function filtrarProdutos() {
+  let input = document.getElementById("busca").value.toLowerCase();
+  let produtos = document.getElementsByClassName("produto");
+
+  for (let i = 0; i < produtos.length; i++) {
+    let nome = produtos[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
+
+    if (nome.includes(input)) {
+      produtos[i].style.display = "block";
+    } else {
+      produtos[i].style.display = "none";
+    }
+  }
+}
+</script>
+</body>
+</html>
